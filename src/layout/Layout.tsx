@@ -18,6 +18,7 @@ function Layout({ children }: LayoutProps) {
         <section className="max-w-screen-xl mx-auto">{children}</section>
         <Link
           to={route.pathname === "/contacts" ? `/contacts/add` : `/contacts`}
+          id="main-btn"
         >
           <div className="fixed bottom-5 right-0 m-8 bg-secondary rounded-full p-3 my-2">
             {route.pathname === "/contacts" ? (
