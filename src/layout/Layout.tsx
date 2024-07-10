@@ -20,13 +20,13 @@ function Layout({ children }: LayoutProps) {
           to={route.pathname === "/contacts" ? `/contacts/add` : `/contacts`}
           id="main-btn"
         >
-          <div className="fixed bottom-5 right-0 m-8 bg-secondary rounded-full p-3 my-2">
+          <button className="fixed bottom-5 right-0 m-8 bg-secondary rounded-full p-3 my-2">
             {route.pathname === "/contacts" ? (
               <IoIosPersonAdd size={30} />
             ) : (
               <IoHomeSharp size={30} />
             )}
-          </div>
+          </button>
         </Link>
       </section>
     </main>
